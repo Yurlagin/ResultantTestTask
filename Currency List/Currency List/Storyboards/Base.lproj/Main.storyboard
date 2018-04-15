@@ -13,7 +13,7 @@
         <!--Currency List-->
         <scene sceneID="okT-yk-vtJ">
             <objects>
-                <tableViewController title="Currency List" id="SHw-QC-09c" customClass="CurrencyListTableViewController" customModule="Currency_List" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CurrencyListTableViewController" title="Currency List" id="SHw-QC-09c" customClass="CurrencyListTableViewController" customModule="Currency_List" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="vBi-lE-ITM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -27,28 +27,26 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecx-6h-Tvw">
-                                            <rect key="frame" x="16" y="4" width="150" height="41.5"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="42" id="6G9-jB-SWz"/>
-                                            </constraints>
+                                            <rect key="frame" x="16" y="14.5" width="150" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esI-Be-Jsk">
-                                            <rect key="frame" x="268.5" y="4" width="86.5" height="42"/>
+                                            <rect key="frame" x="268.5" y="14.5" width="86.5" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Valume" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRc-sl-k4T">
-                                            <rect key="frame" x="174" y="4" width="86.5" height="42"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Volume" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DRc-sl-k4T">
+                                            <rect key="frame" x="174" y="14.5" width="86.5" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="ecx-6h-Tvw" firstAttribute="centerY" secondItem="18p-wc-96T" secondAttribute="centerY" id="6ab-B4-VGK"/>
                                         <constraint firstAttribute="trailing" secondItem="esI-Be-Jsk" secondAttribute="trailing" constant="20" symbolic="YES" id="Evh-Sg-d6o"/>
                                         <constraint firstItem="DRc-sl-k4T" firstAttribute="height" secondItem="ecx-6h-Tvw" secondAttribute="height" id="G8G-lf-Vqv"/>
                                         <constraint firstItem="DRc-sl-k4T" firstAttribute="width" secondItem="esI-Be-Jsk" secondAttribute="width" id="Jxb-1l-5Rx"/>
@@ -57,9 +55,7 @@
                                         <constraint firstItem="ecx-6h-Tvw" firstAttribute="leading" secondItem="18p-wc-96T" secondAttribute="leading" constant="16" id="Zvp-Lc-wmD"/>
                                         <constraint firstItem="DRc-sl-k4T" firstAttribute="leading" secondItem="ecx-6h-Tvw" secondAttribute="trailing" constant="8" symbolic="YES" id="bUr-Wb-S4P"/>
                                         <constraint firstItem="esI-Be-Jsk" firstAttribute="centerY" secondItem="ecx-6h-Tvw" secondAttribute="centerY" id="hJO-0Z-Jcw"/>
-                                        <constraint firstItem="ecx-6h-Tvw" firstAttribute="top" secondItem="18p-wc-96T" secondAttribute="top" constant="4" id="mjA-uh-2Lq"/>
                                         <constraint firstItem="esI-Be-Jsk" firstAttribute="leading" secondItem="DRc-sl-k4T" secondAttribute="trailing" constant="8" symbolic="YES" id="rXc-et-kTm"/>
-                                        <constraint firstAttribute="bottom" secondItem="ecx-6h-Tvw" secondAttribute="bottom" constant="4" id="uC1-7X-eab"/>
                                         <constraint firstItem="DRc-sl-k4T" firstAttribute="centerY" secondItem="ecx-6h-Tvw" secondAttribute="centerY" id="xsc-bQ-PkP"/>
                                     </constraints>
                                 </tableViewCellContentView>

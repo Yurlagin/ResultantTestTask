@@ -18,18 +18,16 @@ class CurrencyListTableViewController: UITableViewController {
     static let cellId = "Currency Cell"
   }
   
-  let model: CurrencyListModelProtocol = CurrencyListModel()
+  var model: CurrencyListModelProtocol! = CurrencyListModel() // should inject in real world ;]
   
   private var stocks = [Currency]()
   
+  
   private func updateUI() {
       switch model.requestStatus {
-      case .none:
+      case .none, .fail:
         navigationItem.leftBarButtonItem = nil
         navigationItem.prompt = model.lastUpdateDescription
-          
-      case .fail:
-        navigationItem.leftBarButtonItem = nil
         
       case .run:
         let spinner = UIActivityIndicatorView(activityIndicatorStyle: .gray)
@@ -41,12 +39,12 @@ class CurrencyListTableViewController: UITableViewController {
       stocks = model.currencies
       tableView.reloadData()
     }
-    
   }
   
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    tableView.rowHeight = 50
     model.didUpdate = { [weak self] in
       self?.updateUI()
     }
@@ -66,7 +64,7 @@ class CurrencyListTableViewController: UITableViewController {
   
   override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellId, for: indexPath) as! CurrencyListTableViewCell
-    cell.configure(withStock: model.currencies[indexPath.row])
+    cell.configure(withCurrency: model.currencies[indexPath.row])
     return cell
   }
   

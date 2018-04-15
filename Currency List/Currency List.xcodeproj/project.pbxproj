@@ -11,7 +11,6 @@
 		3449ABB2208185A5005644F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3449ABB0208185A5005644F2 /* Main.storyboard */; };
 		3449ABB4208185A8005644F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3449ABB3208185A8005644F2 /* Assets.xcassets */; };
 		3449ABB7208185A8005644F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3449ABB5208185A8005644F2 /* LaunchScreen.storyboard */; };
-		3449ABC2208185A8005644F2 /* Currency_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449ABC1208185A8005644F2 /* Currency_ListTests.swift */; };
 		3449ABE32081912D005644F2 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449ABE22081912D005644F2 /* ApiService.swift */; };
 		3449ABE620819297005644F2 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449ABE520819297005644F2 /* Parser.swift */; };
 		3449ABE920819DF8005644F2 /* ApiServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449ABE820819DF8005644F2 /* ApiServiceTests.swift */; };
@@ -38,7 +37,6 @@
 		3449ABB6208185A8005644F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3449ABB8208185A8005644F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3449ABBD208185A8005644F2 /* Currency ListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Currency ListTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3449ABC1208185A8005644F2 /* Currency_ListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency_ListTests.swift; sourceTree = "<group>"; };
 		3449ABC3208185A8005644F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3449ABE22081912D005644F2 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		3449ABE520819297005644F2 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 		3449ABC0208185A8005644F2 /* Currency ListTests */ = {
 			isa = PBXGroup;
 			children = (
-				3449ABC1208185A8005644F2 /* Currency_ListTests.swift */,
 				3449ABC3208185A8005644F2 /* Info.plist */,
 			);
 			path = "Currency ListTests";
@@ -306,7 +303,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3449ABE920819DF8005644F2 /* ApiServiceTests.swift in Sources */,
-				3449ABC2208185A8005644F2 /* Currency_ListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

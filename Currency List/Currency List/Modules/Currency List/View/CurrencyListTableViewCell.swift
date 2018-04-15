@@ -14,18 +14,18 @@ class CurrencyListTableViewCell: UITableViewCell {
   @IBOutlet weak var volumeLabel: UILabel!
   @IBOutlet weak var amountLabel: UILabel!
   
-  private var stock: Currency!
+  private var currency: Currency!
   
-  func configure(withStock stock: Currency) {
-    guard self.stock != stock else { return }
-    self.stock = stock
+  func configure(withCurrency currency: Currency) {
+    guard self.currency != currency else { return }
+    self.currency = currency
     updateUI()
   }
   
   private func updateUI() {
-    nameLabel.text = stock.name
-    volumeLabel.text = String(stock.volume)
-    amountLabel.text = String(format: "%.2f", stock.price.amount)
+    nameLabel.text = currency.name
+    volumeLabel.text = String(currency.volume)
+    amountLabel.text = String(format: "%.2f", currency.price.amount)
   }
 
 }
